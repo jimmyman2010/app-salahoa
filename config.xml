@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.hocphat241094" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>hocphat</name>
+<widget id="com.ionicframework.learningbuddha" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>LearningBuddha</name>
   <description>
-        An Ionic Framework and Cordova project.
+      Learning Buddha's Teaching
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="tranduyminhman@gmail.com" href="http://mantrantd.com/">
+      Man Tran
     </author>
   <content src="index.html"/>
   <access origin="*"/>
