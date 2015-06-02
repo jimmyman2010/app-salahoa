@@ -14,10 +14,7 @@ define(['app'], function (learningBuddha) {
             Password: "Password"
         });
         $translateProvider.translations('vi', {
-            'Learning Buddha': "Học Phật",
-            Login: "Đăng nhập",
-            Username: "Tên đăng nhập",
-            Password: "Mật khẩu"
+
         });
         $translateProvider.preferredLanguage("vi");
         $translateProvider.fallbackLanguage("en");

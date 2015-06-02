@@ -1,4 +1,4 @@
-<ion-view title="{{'Books Online' | translate}}">
+<ion-view title="Books Online">
     <ion-content>
 
         <ion-list>
@@ -6,6 +6,9 @@
             <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/main/book-detail/{{book.id}}">
                 <h3>{{book.title}}</h3>
                 <p>{{book.description}}</p>
+                <ion-option-button class="button-positive" ng-click="share(book)">
+                    {{'Share' | translate}}
+                </ion-option-button>
             </ion-item>
 
         </ion-list>

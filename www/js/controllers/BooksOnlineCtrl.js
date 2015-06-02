@@ -4,7 +4,15 @@ define(function () {
     'use strict';
 
     function ctrl($scope, BookService) {
-        $scope.pets = BookService.all();
+        $scope.data = {
+            showDelete: false
+        };
+
+        $scope.share = function(book) {
+            alert('Share Item: ' + book.id);
+        };
+
+        $scope.books = BookService.all();
     }
 
     ctrl.$inject = ['$scope', 'BookService'];
