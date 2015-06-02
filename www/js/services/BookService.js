@@ -5,7 +5,7 @@ define(['angular'], function (angular) {
 
     var factory = function () {
 
-        var pets = [
+        var books = [
             { id: 0, title: 'Cats', description: 'Furry little creatures. Obsessed with plotting assassination, but never following through on it.' },
             { id: 1, title: 'Dogs', description: 'Lovable. Loyal almost to a fault. Smarter than they let on.' },
             { id: 2, title: 'Turtles', description: 'Everyone likes turtles.' },
@@ -14,10 +14,10 @@ define(['angular'], function (angular) {
 
         return {
             all: function () {
-                return pets;
+                return books;
             },
-            get: function (petId) {
-                return pets[petId];
+            get: function (bookId) {
+                return books[bookId];
             }
         };
 

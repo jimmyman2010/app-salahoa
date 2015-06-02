@@ -6,7 +6,7 @@ define(function () {
     function ctrl($scope, $state) {
 
         $scope.login = function () {
-            $state.go('tab.pet-index');
+            $state.go('main.books-online');
         };
         
     }

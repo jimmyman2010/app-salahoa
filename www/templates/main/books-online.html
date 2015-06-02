@@ -1,0 +1,14 @@
+<ion-view title="{{'Books Online' | translate}}">
+    <ion-content>
+
+        <ion-list>
+
+            <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/main/book-detail/{{book.id}}">
+                <h3>{{book.title}}</h3>
+                <p>{{book.description}}</p>
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>

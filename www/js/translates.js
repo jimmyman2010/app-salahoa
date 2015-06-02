@@ -8,18 +8,18 @@ define(['app'], function (learningBuddha) {
 
         $translateProvider.useSanitizeValueStrategy(null);
         $translateProvider.translations('en', {
-            learning_buddha: "Learning Buddha",
+            'Learning Buddha': "Learning Buddha",
             Login: "Login",
             Username: "Username",
             Password: "Password"
         });
         $translateProvider.translations('vi', {
-            learning_buddha: "Học Phật",
+            'Learning Buddha': "Học Phật",
             Login: "Đăng nhập",
             Username: "Tên đăng nhập",
             Password: "Mật khẩu"
         });
-        $translateProvider.preferredLanguage("en");
+        $translateProvider.preferredLanguage("vi");
         $translateProvider.fallbackLanguage("en");
 
     });

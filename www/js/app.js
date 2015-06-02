@@ -14,11 +14,11 @@ define(['angular',
 
         var learningBuddha = angular.module('learningBuddha', [
             'ionic',
-            'app.controllers',
-            'app.filters',
-            'app.services',
-            'app.directives',
-            'app.config',
+            'learningBuddha.controllers',
+            'learningBuddha.filters',
+            'learningBuddha.services',
+            'learningBuddha.directives',
+            'learningBuddha.config',
             'ui.router',
             'pascalprecht.translate']);
 

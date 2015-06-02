@@ -8,46 +8,52 @@ define(['app'], function (learningBuddha) {
         $stateProvider
             .state('login', {
                 url: "/login",
-                templateUrl: "templates/pages/login.html",
+                templateUrl: "templates/layouts/login.html",
                 controller: 'LoginCtrl'
             })
 
-            .state('tab', {
-                url: "/tab",
+            .state('main', {
+                url: "/main",
                 abstract: true,
-                templateUrl: "templates/pages/tabs.html"
+                templateUrl: "templates/layouts/main.html"
             })
-            .state('tab.pet-index', {
-                url: '/pets',
+            .state('main.books-online', {
+                url: '/books-online',
                 views: {
-                    'pets-tab': {
-                        templateUrl: 'templates/tabs/pet-index.html',
-                        controller: 'PetIndexCtrl'
+                    'main': {
+                        templateUrl: 'templates/main/books-online.html',
+                        controller: 'BooksOnlineCtrl'
                     }
                 }
             })
-            .state('tab.pet-detail', {
-                url: '/pet/:petId',
+            .state('main.book-detail', {
+                url: '/book-detail/:bookId',
                 views: {
-                    'pets-tab': {
-                        templateUrl: 'templates/tabs/pet-detail.html',
-                        controller: 'PetDetailCtrl'
+                    'main': {
+                        templateUrl: 'templates/main/book-detail.html',
+                        controller: 'BookDetailCtrl'
                     }
                 }
             })
-            .state('tab.adopt', {
-                url: '/adopt',
+
+            .state('setting', {
+                url: "/setting",
+                abstract: true,
+                templateUrl: 'templates/layouts/setting.html'
+            })
+            .state('setting.general', {
+                url: '/general',
                 views: {
-                    'adopt-tab': {
-                        templateUrl: 'templates/tabs/adopt.html'
+                    'general-tab': {
+                        templateUrl: 'templates/settings/general.html'
                     }
                 }
             })
-            .state('tab.about', {
+            .state('setting.about', {
                 url: '/about',
                 views: {
                     'about-tab': {
-                        templateUrl: 'templates/tabs/about.html'
+                        templateUrl: 'templates/settings/about.html'
                     }
                 }
             });
