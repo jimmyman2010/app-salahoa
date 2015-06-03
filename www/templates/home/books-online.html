@@ -31,39 +31,12 @@
                 </ion-slide>
             </ion-slide-box>
         </div>
-        <!--<div class="homepage-slider" data-snap-ignore="true">-->
-            <!--<div>-->
-                <!--<div class="overlay"></div>-->
-                <!--<div class="homepage-slider-caption homepage-left-caption">-->
-                    <!--<h3>Swipe me!</h3>-->
-                    <!--<p>Hope you enjoy our latest item!</p>-->
-                <!--</div>-->
-                <!--<img ng-src="img/pictures/3.jpg" class="responsive-image" alt="Swipe me!">-->
-            <!--</div>-->
-            <!--<div>-->
-                <!--<div class="overlay"></div>-->
-                <!--<div class="homepage-slider-caption homepage-center-caption">-->
-                    <!--<h3>Slider</h3>-->
-                    <!--<p>Our slider is awesome!</p>-->
-                <!--</div>-->
-                <!--<img ng-src="img/pictures/5.jpg" class="responsive-image" alt="Slider">-->
-            <!--</div>-->
-            <!--<div>-->
-                <!--<div class="overlay"></div>-->
-                <!--<div class="homepage-slider-caption homepage-right-caption">-->
-                    <!--<h3>Responsive</h3>-->
-                    <!--<p>And it's fully responsive!</p>-->
-                <!--</div>-->
-                <!--<img ng-src="img/pictures/6.jpg" class="responsive-image" alt="Responsive">-->
-            <!--</div>-->
-        <!--</div>-->
-
         <ion-list>
 
             <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/main/book-detail/{{book.id}}">
                 <h3>{{book.title}}</h3>
                 <p>{{book.description}}</p>
-                <ion-option-button class="button-positive" ng-click="share(book)">
+                <ion-option-button class="button-balanced" ng-click="share(book)">
                     {{'Share' | translate}}
                 </ion-option-button>
             </ion-item>
