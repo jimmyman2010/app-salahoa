@@ -1,7 +1,7 @@
 <ion-side-menus enable-menu-with-back-views="true">
 
     <ion-side-menu-content>
-        <ion-nav-bar class="bar-positive">
+        <ion-nav-bar class="bar-light">
             <ion-nav-buttons side="left">
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
                 </button>
@@ -37,17 +37,17 @@
             </div>
             <ul class="list">
                 <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
-                <a href="#/main/books-online" class="item item-icon-left item-icon-right" menu-close>
+                <a href="#/home/books-online" ui-sref="home.books-online" ui-sref-active="active" class="item item-icon-left item-icon-right" menu-close>
                     <i class="icon ion-home"></i>
                     {{'Home' | translate}}
                     <i class="icon ion-ios-arrow-right"></i>
                 </a>
-                <a href="#/page/general" class="item item-icon-left item-icon-right active" menu-close>
+                <a href="#/page/setting" ui-sref="page.setting" ui-sref-active="active" class="item item-icon-left item-icon-right" menu-close>
                     <i class="icon ion-ios-gear"></i>
                     {{'Setting' | translate}}
                     <i class="icon ion-ios-arrow-right"></i>
                 </a>
-                <a href="#/page/about" class="item item-icon-left item-icon-right" menu-close>
+                <a href="#/page/about" ui-sref="page.about" ui-sref-active="active" class="item item-icon-left item-icon-right" menu-close>
                     <i class="icon ion-ios-person"></i>
                     {{'About' | translate}}
                     <i class="icon ion-ios-arrow-right"></i>

@@ -12,6 +12,21 @@ define(['app'], function (learningBuddha) {
                 controller: 'LoginCtrl'
             })
 
+            .state('home', {
+                url: "/home",
+                abstract: true,
+                templateUrl: "templates/layouts/home.html"
+            })
+            .state('home.books-online', {
+                url: '/books-online',
+                views: {
+                    'home': {
+                        templateUrl: 'templates/home/books-online.html',
+                        controller: 'BooksOnlineCtrl'
+                    }
+                }
+            })
+
             .state('main', {
                 url: "/main",
                 abstract: true,
@@ -39,13 +54,14 @@ define(['app'], function (learningBuddha) {
             .state('page', {
                 url: "/page",
                 abstract: true,
-                templateUrl: 'templates/layouts/page.html'
+                templateUrl: 'templates/layouts/page.html',
+                controller: 'PageCtrl'
             })
-            .state('page.general', {
-                url: '/general',
+            .state('page.setting', {
+                url: '/setting',
                 views: {
                     'page': {
-                        templateUrl: 'templates/pages/general.html'
+                        templateUrl: 'templates/pages/setting.html'
                     }
                 }
             })

@@ -7741,9 +7741,11 @@ strong, b {
   .menu-left .bar-header {
     padding: 0; }
     .menu-left .bar-header .button-bar {
-      border: 1px solid #26292d; }
+      border-bottom: 1px solid #26292d; }
       .menu-left .bar-header .button-bar a {
         border: none; }
+        .menu-left .bar-header .button-bar a i:before {
+          font-size: 18px; }
   .menu-left .sidebar-logo {
     padding: 30px 0 20px;
     text-align: center; }
@@ -7772,3 +7774,57 @@ strong, b {
       color: #b4b4b4; }
     .menu-left .list .item.active {
       background-color: rgba(255, 255, 255, 0.02); }
+  .menu-left .bar-footer {
+    background-color: #26292d; }
+    .menu-left .bar-footer .title {
+      color: #b4b4b4;
+      font-size: 11px;
+      font-family: "ralewaylight", sans-serif; }
+
+.pane .button-floating {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 30px;
+  padding: 0 10px; }
+.pane .bar-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.66) !important; }
+.pane .scroll-content {
+  overflow: visible !important; }
+
+.slide-wrapper {
+  height: 200px;
+  margin: 0 auto; }
+  .slide-wrapper .slider {
+    height: 100%;
+    overflow: visible; }
+    .slide-wrapper .slider .slider-slide {
+      overflow: hidden;
+      color: #000;
+      background-color: #fff;
+      text-align: center; }
+    .slide-wrapper .slider ion-slide:nth-child(2) {
+      z-index: 1; }
+    .slide-wrapper .slider ion-slide .slide {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      .slide-wrapper .slider ion-slide .slide .slider-caption {
+        position: absolute;
+        bottom: -100px;
+        margin: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2); }
+        .slide-wrapper .slider ion-slide .slide .slider-caption h3 {
+          color: #f1f1f1;
+          margin-bottom: 2px;
+          padding: 0 10px; }
+        .slide-wrapper .slider ion-slide .slide .slider-caption p {
+          color: #f1f1f1;
+          margin-bottom: 4px;
+          padding: 0 10px; }
+    .slide-wrapper .slider .current .slide .slider-caption {
+      transition: bottom 250ms ease-out 150ms;
+      bottom: 0; }

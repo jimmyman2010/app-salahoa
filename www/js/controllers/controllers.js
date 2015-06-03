@@ -10,6 +10,7 @@ define(function (require) {
         controllers = angular.module('learningBuddha.controllers', ['learningBuddha.services', 'learningBuddha.config']);
 
     controllers.controller('LoginCtrl', require('controllers/LoginCtrl'));
+    controllers.controller('PageCtrl', require('controllers/PageCtrl'));
     controllers.controller('BooksOnlineCtrl', require('controllers/BooksOnlineCtrl'));
     controllers.controller('BookDetailCtrl', require('controllers/BookDetailCtrl'));
     

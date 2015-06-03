@@ -56,9 +56,12 @@ strong, b{
     .bar-header{
         padding: 0;
         .button-bar{
-            border: 1px solid $menu-left-bd-color;
+            border-bottom: 1px solid $menu-left-bd-color;
             a {
                 border: none;
+                i:before{
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -97,6 +100,78 @@ strong, b{
             &.active{
                 background-color: $menu-left-bg-color-act;
             }
+        }
+    }
+    .bar-footer{
+        background-color: $menu-left-bd-color;
+        .title {
+            color: #b4b4b4;
+            font-size: 11px;
+            font-family: $raleway-light-family;
+        }
+    }
+}
+
+.pane{
+    .button-floating{
+        position: absolute;
+        z-index: 100;
+        color: #fff;
+        background-color: rgba(0,0,0,0.1);
+        min-height: 30px;
+        padding: 0 10px;
+    }
+    .bar-header{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        background-color: rgba(255,255,255,.66) !important;
+    }
+    .scroll-content {
+        overflow: visible !important;
+    }
+}
+
+.slide-wrapper {
+    height: 200px;
+    margin: 0 auto;
+    .slider {
+        height: 100%;
+        overflow: visible;
+        .slider-slide {
+            overflow: hidden;
+            color: #000;
+            background-color: #fff;
+            text-align: center;
+        }
+        ion-slide{
+            &:nth-child(2) {
+                z-index: 1;
+            }
+            .slide {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .slider-caption {
+                    position: absolute;
+                    bottom: -100px;
+                    margin: 0;
+                    width: 100%;
+                    background-color: rgba(255,255,255,0.2);
+                    h3{
+                        color: #f1f1f1;
+                        margin-bottom: 2px;
+                        padding: 0 10px;
+                    }
+                    p{
+                        color: #f1f1f1;
+                        margin-bottom: 4px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+        .current .slide .slider-caption {
+            transition: bottom 250ms ease-out 150ms;
+            bottom: 0;
         }
     }
 }
