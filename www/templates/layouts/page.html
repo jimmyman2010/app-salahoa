@@ -8,13 +8,13 @@
             </ion-nav-buttons>
         </ion-nav-bar>
 
-        <ion-nav-view name="main"></ion-nav-view>
+        <ion-nav-view name="page"></ion-nav-view>
 
     </ion-side-menu-content>
 
     <ion-side-menu side="left">
         <ion-header-bar class="bar-dark">
-            <div class="button-bar icon">
+            <div class="button-bar">
                 <a class="button" href="https://www.facebook.com/jimmyman2010">
                     &nbsp;<i class="icon ion-social-facebook"></i></a>
                 <a class="button" href="https://twitter.com/jimmyman2010">
@@ -27,7 +27,6 @@
                     &nbsp;<i class="icon ion-ios-email-outline"></i></a>
             </div>
         </ion-header-bar>
-
         <ion-content>
             <div class="sidebar-logo">
                 <img class="home-logo" ng-src="img/mask.png" alt="" />
@@ -38,12 +37,12 @@
             </div>
             <ul class="list">
                 <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
-                <a href="#/main/books-online" class="item item-icon-left item-icon-right active" menu-close>
+                <a href="#/main/books-online" class="item item-icon-left item-icon-right" menu-close>
                     <i class="icon ion-home"></i>
                     {{'Home' | translate}}
                     <i class="icon ion-ios-arrow-right"></i>
                 </a>
-                <a href="#/page/general" class="item item-icon-left item-icon-right" menu-close>
+                <a href="#/page/general" class="item item-icon-left item-icon-right active" menu-close>
                     <i class="icon ion-ios-gear"></i>
                     {{'Setting' | translate}}
                     <i class="icon ion-ios-arrow-right"></i>
@@ -58,4 +57,3 @@
     </ion-side-menu>
 
 </ion-side-menus>
-

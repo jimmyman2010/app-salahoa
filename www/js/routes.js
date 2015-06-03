@@ -36,24 +36,24 @@ define(['app'], function (learningBuddha) {
                 }
             })
 
-            .state('setting', {
-                url: "/setting",
+            .state('page', {
+                url: "/page",
                 abstract: true,
-                templateUrl: 'templates/layouts/setting.html'
+                templateUrl: 'templates/layouts/page.html'
             })
-            .state('setting.general', {
+            .state('page.general', {
                 url: '/general',
                 views: {
-                    'general-tab': {
-                        templateUrl: 'templates/settings/general.html'
+                    'page': {
+                        templateUrl: 'templates/pages/general.html'
                     }
                 }
             })
-            .state('setting.about', {
+            .state('page.about', {
                 url: '/about',
                 views: {
-                    'about-tab': {
-                        templateUrl: 'templates/settings/about.html'
+                    'page': {
+                        templateUrl: 'templates/pages/about.html'
                     }
                 }
             });

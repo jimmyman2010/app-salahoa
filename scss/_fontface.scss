@@ -1,0 +1,87 @@
+$font-path: "../fonts" !default;
+$raleway-black-family: "ralewayblack", sans-serif;
+$raleway-light-family: "ralewaylight", sans-serif;
+$raleway-regular-family: "ralewayregular", sans-serif;
+$roboto-family: "robotoregular", sans-serif;
+$roboto-italic-family: "robotoitalic", sans-serif;
+$roboto-bold-family: "robotobold", sans-serif;
+$roboto-bold-italic-family: "robotobold_italic", sans-serif;
+
+/* fontface */
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('#{$font-path}/raleway-black-webfont.eot');
+    src: url('#{$font-path}/raleway-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/raleway-black-webfont.woff2') format('woff2'),
+    url('#{$font-path}/raleway-black-webfont.woff') format('woff'),
+    url('#{$font-path}/raleway-black-webfont.ttf') format('truetype'),
+    url('#{$font-path}/raleway-black-webfont.svg#ralewayblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('#{$font-path}/raleway-light-webfont.eot');
+    src: url('#{$font-path}/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/raleway-light-webfont.woff2') format('woff2'),
+    url('#{$font-path}/raleway-light-webfont.woff') format('woff'),
+    url('#{$font-path}/raleway-light-webfont.ttf') format('truetype'),
+    url('#{$font-path}/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('#{$font-path}/raleway-regular-webfont.eot');
+    src: url('#{$font-path}/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/raleway-regular-webfont.woff2') format('woff2'),
+    url('#{$font-path}/raleway-regular-webfont.woff') format('woff'),
+    url('#{$font-path}/raleway-regular-webfont.ttf') format('truetype'),
+    url('#{$font-path}/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('#{$font-path}/roboto-regular-webfont.eot');
+    src: url('#{$font-path}/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/roboto-regular-webfont.woff2') format('woff2'),
+    url('#{$font-path}/roboto-regular-webfont.woff') format('woff'),
+    url('#{$font-path}/roboto-regular-webfont.ttf') format('truetype'),
+    url('#{$font-path}/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('#{$font-path}/roboto-italic-webfont.eot');
+    src: url('#{$font-path}/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/roboto-italic-webfont.woff2') format('woff2'),
+    url('#{$font-path}/roboto-italic-webfont.woff') format('woff'),
+    url('#{$font-path}/roboto-italic-webfont.ttf') format('truetype'),
+    url('#{$font-path}/roboto-italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('#{$font-path}/roboto-bold-webfont.eot');
+    src: url('#{$font-path}/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/roboto-bold-webfont.woff2') format('woff2'),
+    url('#{$font-path}/roboto-bold-webfont.woff') format('woff'),
+    url('#{$font-path}/roboto-bold-webfont.ttf') format('truetype'),
+    url('#{$font-path}/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('#{$font-path}/roboto-bolditalic-webfont.eot');
+    src: url('#{$font-path}/roboto-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/roboto-bolditalic-webfont.woff2') format('woff2'),
+    url('#{$font-path}/roboto-bolditalic-webfont.woff') format('woff'),
+    url('#{$font-path}/roboto-bolditalic-webfont.ttf') format('truetype'),
+    url('#{$font-path}/roboto-bolditalic-webfont.svg#robotobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -3,7 +3,7 @@ To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
 
 For example, you might change some of the default colors:
-
+*/
 $light:                           #fff !default;
 $stable:                          #f8f8f8 !default;
 $positive:                        #387ef5 !default;
@@ -12,12 +12,91 @@ $balanced:                        #33cd5f !default;
 $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
+$dark:                            #2e3136 !default;
+/**/
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
+$img-path: "../img";
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+@import "fontface";
+
+/* setting */
+$menu-left-bg-color: #2e3136;
+$menu-left-bg-color-act: rgba(255,255,255,0.02);
+$menu-left-bd-color: #26292d;
+
+body{
+    font-family: $roboto-family;
+}
+em, i{
+    font-family: $roboto-italic-family;
+    font-style: normal;
+    strong, b{
+        font-family: $roboto-bold-family;
+        font-weight: normal;
+    }
+}
+strong, b{
+    font-family: $roboto-bold-family;
+    font-weight: normal;
+    em, i {
+        font-family: $roboto-italic-family;
+        font-style: normal;
+    }
+}
+
+/* menu left */
+.menu-left{
+    background-color: $menu-left-bg-color;
+    color: #f1f1f1;
+    .bar-header{
+        padding: 0;
+        .button-bar{
+            border: 1px solid $menu-left-bd-color;
+            a {
+                border: none;
+            }
+        }
+    }
+    .sidebar-logo {
+        padding: 30px 0 20px;
+        text-align: center;
+        .home-logo {
+            background-image: url('#{$img-path}/sample.jpg');
+            background-size: cover;
+        }
+        .title{
+            font-family: $raleway-black-family;
+            font-size: 22px;
+            color: #f1f1f1;
+            text-transform: uppercase;
+            margin: 10px 0 2px;
+        }
+        .subtitle{
+            font-family: $raleway-light-family;
+            font-size: 13px;
+            color: #b4b4b4;
+            margin: 0;
+            line-height: 18px;
+        }
+    }
+    .list{
+        .item{
+            background-color: $menu-left-bg-color;
+            border-color: $menu-left-bd-color;
+            font-size: 12px;
+            position: relative;
+            .icon{
+                font-size: 18px;
+                color: #b4b4b4;
+            }
+            &.active{
+                background-color: $menu-left-bg-color-act;
+            }
+        }
+    }
+}
