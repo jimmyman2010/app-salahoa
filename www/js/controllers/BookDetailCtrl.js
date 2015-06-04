@@ -4,7 +4,11 @@ define(function () {
     'use strict';
 
     function ctrl($scope, $stateParams, BookService) {
-        $scope.book = BookService.get($stateParams.bookId);
+
+        var book = BookService.get({ id: $stateParams.bookId }, function() {
+            $scope.book = book;
+        });
+
     }
 
     ctrl.$inject = ['$scope', '$stateParams', 'BookService'];
