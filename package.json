@@ -1,7 +1,7 @@
 {
   "name": "LearningBuddha",
   "version": "1.0.0",
-  "description": "LearningBuddha: An Ionic project",
+  "description": "Learning Buddha's Teaching",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
@@ -16,6 +16,7 @@
   },
   "cordovaPlugins": [],
   "cordovaPlatforms": [
-    "android"
+    "android",
+    "ios"
   ]
 }
