@@ -48,6 +48,10 @@ strong, b{
         font-style: normal;
     }
 }
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
 
 /* menu left */
 .menu-left{
@@ -102,8 +106,9 @@ strong, b{
             }
         }
     }
-    .bar-footer{
+    .bar-footer-left{
         background-color: $menu-left-bd-color;
+        z-index: 100;
         .title {
             color: #b4b4b4;
             font-size: 11px;
@@ -121,7 +126,7 @@ strong, b{
         min-height: 30px;
         padding: 0 10px;
     }
-    .bar-header{
+    .bar-header-content{
         border-bottom: 1px solid rgba(0,0,0,0.1);
         background-color: rgba(255,255,255,.66) !important;
     }
@@ -131,7 +136,7 @@ strong, b{
 }
 
 .slide-wrapper {
-    height: 200px;
+    height: 160px;
     margin: 0 auto;
     .slider {
         height: 100%;

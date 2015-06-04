@@ -38,7 +38,9 @@ define(function () {
 
         $scope.slideChanged = showBanner;
 
-        $scope.books = BookService.all();
+        var books = BookService.query(function() {
+            $scope.books = books;
+        });
     }
 
     ctrl.$inject = ['$scope', 'BookService'];

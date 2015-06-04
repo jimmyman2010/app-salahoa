@@ -32,15 +32,6 @@ define(['app'], function (learningBuddha) {
                 abstract: true,
                 templateUrl: "templates/layouts/main.html"
             })
-            .state('main.books-online', {
-                url: '/books-online',
-                views: {
-                    'main': {
-                        templateUrl: 'templates/main/books-online.html',
-                        controller: 'BooksOnlineCtrl'
-                    }
-                }
-            })
             .state('main.book-detail', {
                 url: '/book-detail/:bookId',
                 views: {

@@ -7734,6 +7734,10 @@ strong, b {
     font-family: "robotoitalic", sans-serif;
     font-style: normal; }
 
+.responsive-image {
+  max-width: 100%;
+  height: auto; }
+
 /* menu left */
 .menu-left {
   background-color: #2e3136;
@@ -7774,9 +7778,10 @@ strong, b {
       color: #b4b4b4; }
     .menu-left .list .item.active {
       background-color: rgba(255, 255, 255, 0.02); }
-  .menu-left .bar-footer {
-    background-color: #26292d; }
-    .menu-left .bar-footer .title {
+  .menu-left .bar-footer-left {
+    background-color: #26292d;
+    z-index: 100; }
+    .menu-left .bar-footer-left .title {
       color: #b4b4b4;
       font-size: 11px;
       font-family: "ralewaylight", sans-serif; }
@@ -7788,14 +7793,14 @@ strong, b {
   background-color: rgba(0, 0, 0, 0.1);
   min-height: 30px;
   padding: 0 10px; }
-.pane .bar-header {
+.pane .bar-header-content {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.66) !important; }
 .pane .scroll-content {
   overflow: visible !important; }
 
 .slide-wrapper {
-  height: 200px;
+  height: 160px;
   margin: 0 auto; }
   .slide-wrapper .slider {
     height: 100%;

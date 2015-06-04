@@ -1,7 +1,7 @@
-<ion-view title="Books Online">
+<ion-view title="{{'Books Online' | translate}}">
     <ion-content>
         <div class="slide-wrapper">
-            <ion-slide-box active-slide="activeSlide" on-slide-changed="slideChanged(index)" show-pager="false">
+            <ion-slide-box active-slide="activeSlide" does-continue="true" auto-play="true" on-slide-changed="slideChanged(index)" show-pager="false">
                 <ion-slide>
                     <div class="slide">
                         <img ng-src="img/pictures/3.jpg" class="responsive-image" alt="Swipe me!">
@@ -33,7 +33,7 @@
         </div>
         <ion-list>
 
-            <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/main/book-detail/{{book.id}}">
+            <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/main/book-detail/{{book._id}}">
                 <h3>{{book.title}}</h3>
                 <p>{{book.description}}</p>
                 <ion-option-button class="button-balanced" ng-click="share(book)">

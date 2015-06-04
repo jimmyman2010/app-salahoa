@@ -20,7 +20,8 @@ define(['angular',
             'learningBuddha.directives',
             'learningBuddha.config',
             'ui.router',
-            'pascalprecht.translate']);
+            'pascalprecht.translate',
+            'ngResource']);
 
         return learningBuddha;
 
