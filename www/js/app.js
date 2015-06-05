@@ -12,17 +12,19 @@ define(['angular',
     function (angular, uiRouter) {
         'use strict';
 
-        var learningBuddha = angular.module('learningBuddha', [
+        var SALA = angular.module('SALA', [
             'ionic',
-            'learningBuddha.controllers',
-            'learningBuddha.filters',
-            'learningBuddha.services',
-            'learningBuddha.directives',
-            'learningBuddha.config',
+            'SALA.controllers',
+            'SALA.filters',
+            'SALA.services',
+            'SALA.directives',
+            'SALA.config',
             'ui.router',
             'pascalprecht.translate',
-            'ngResource']);
+            'ngResource',
+            'ngCordova'
+        ]);
 
-        return learningBuddha;
+        return SALA;
 
     });

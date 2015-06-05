@@ -7,7 +7,7 @@ define(function (require) {
     var angular = require('angular'),
         services = require('services/services'),
         config = require('config'),
-        controllers = angular.module('learningBuddha.controllers', ['learningBuddha.services', 'learningBuddha.config']);
+        controllers = angular.module('SALA.controllers', ['SALA.services', 'SALA.config']);
 
     controllers.controller('LoginCtrl', require('controllers/LoginCtrl'));
     controllers.controller('PageCtrl', require('controllers/PageCtrl'));

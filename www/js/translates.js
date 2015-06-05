@@ -1,10 +1,10 @@
 /**
  * Created by ManTran on 6/2/2015.
  */
-define(['app'], function (learningBuddha) {
+define(['app'], function (SALA) {
     'use strict';
 
-    learningBuddha.config(function ($translateProvider) {
+    SALA.config(function ($translateProvider) {
 
         $translateProvider.useSanitizeValueStrategy(null);
         $translateProvider.translations('en', {

@@ -6,7 +6,7 @@ define(function (require) {
 
     var angular = require('angular'),
         services = require('services/services'),
-        directives = angular.module('learningBuddha.directives', ['learningBuddha.services']);
+        directives = angular.module('SALA.directives', ['SALA.services']);
     
     directives.directive('appVersion', require('directives/VersionDirective'));
     return directives;

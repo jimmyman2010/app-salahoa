@@ -1,9 +1,9 @@
 /*global define, require */
 
-define(['app'], function (learningBuddha) {
+define(['app'], function (SALA) {
     'use strict';
 
-    learningBuddha.config(function ($stateProvider, $urlRouterProvider) {
+    SALA.config(function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider
             .state('login', {

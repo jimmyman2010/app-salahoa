@@ -3,7 +3,7 @@
 define(['angular'], function (angular) {
 	'use strict';
   
-	return angular.module('learningBuddha.config', [])
+	return angular.module('SALA.config', [])
 		.constant('VERSION', '0.1');
     
 });
