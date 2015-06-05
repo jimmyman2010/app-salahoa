@@ -51,7 +51,7 @@ define(['app'], function (SALA) {
             .state('page.setting', {
                 url: '/setting',
                 views: {
-                    'page': {
+                    'setting': {
                         templateUrl: 'templates/pages/setting.html'
                     }
                 }
@@ -59,7 +59,7 @@ define(['app'], function (SALA) {
             .state('page.about', {
                 url: '/about',
                 views: {
-                    'page': {
+                    'about': {
                         templateUrl: 'templates/pages/about.html'
                     }
                 }

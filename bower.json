@@ -2,7 +2,7 @@
   "name": "SALA",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0",
+    "ionic": "driftyco/ionic-bower",
     "ngCordova": "driftyco/ng-cordova",
     "ngResource": "angular/bower-angular-resource",
     "requirejs": "jrburke/requirejs",
