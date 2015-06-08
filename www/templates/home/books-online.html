@@ -1,5 +1,13 @@
 <ion-view title="{{'Books Online' | translate}}">
     <ion-content>
+        <div id="preloader" style="display: none">
+            <div id="status">
+                <p class="center-text">
+                    Loading the content...
+                    <em>Loading depends on your connection speed!</em>
+                </p>
+            </div>
+        </div>
         <div class="slide-wrapper">
             <ion-slide-box active-slide="activeSlide" does-continue="true" auto-play="true" on-slide-changed="slideChanged(index)" show-pager="false">
                 <ion-slide>
