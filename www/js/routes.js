@@ -31,7 +31,8 @@ define(['app'], function (SALA) {
             .state('main', {
                 url: "/main",
                 abstract: true,
-                templateUrl: "templates/layouts/main.html"
+                templateUrl: "templates/layouts/main.html",
+                controller: 'MainCtrl'
             })
             .state('main.book-detail', {
                 url: '/book-detail/:bookId',
