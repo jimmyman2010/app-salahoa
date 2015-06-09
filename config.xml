@@ -4,11 +4,13 @@
   <description>
       Learning Buddha's Teaching
     </description>
-  <author email="tranduyminhman@gmail.com" href="http://mantrantd.com/">
+  <author email="tranduyminhman@gmail.com" href="http://www.mantrantd.com/">
       Man Tran
     </author>
   <content src="index.html"/>
   <access origin="*"/>
+    <access origin="tel:*" launch-external="yes" />
+    <access origin="mailto:*" launch-external="yes" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>

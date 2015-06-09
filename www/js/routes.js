@@ -15,7 +15,8 @@ define(['app'], function (SALA) {
             .state('home', {
                 url: "/home",
                 abstract: true,
-                templateUrl: "templates/layouts/home.html"
+                templateUrl: "templates/layouts/home.html",
+                controller: 'HomeCtrl'
             })
             .state('home.books-online', {
                 url: '/books-online',
@@ -65,7 +66,7 @@ define(['app'], function (SALA) {
                 }
             });
 
-        $urlRouterProvider.otherwise("/login");
+        $urlRouterProvider.otherwise("/home/books-online");
 
     });
 
