@@ -1,9 +1,17 @@
 <ion-view title="{{book.title}}">
     <ion-content padding="true">
         <p>{{ book.description }}</p>
+        <p>{{ duration }}</p>
         <p>
             <a class="button button-small icon ion-arrow-left-b" href="#/home/books-online">{{'Books Online' | translate}}</a>
-            <button class="button" ng-click="play()">Play from internet</button>
+
+            <button class="button" ng-click="play()">Play</button>
+            <button class="button" ng-click="stop()">Stop</button>
+            <button class="button" ng-click="pause()">Pause</button>
+            <button class="button" ng-click="resume()">Resume</button>
+
+
         </p>
+        <p>{{media.getDuration()}}</p>
     </ion-content>
 </ion-view>

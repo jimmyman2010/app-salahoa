@@ -1,16 +1,8 @@
 <ion-view title="{{'General' | translate}}">
     <ion-content has-tabs="true">
         <div class="list list-inset">
-            <label class="item item-input">
-                <span class="input-label">{{'Your name' | translate}}</span>
-                <input type="text">
-            </label>
-            <label class="item item-input">
-                <span class="input-label">{{'Your email' | translate}}</span>
-                <input type="email">
-            </label>
-            <ion-toggle>{{'Subscribe To Newsletter' | translate}}</ion-toggle>
-            <button class="button button-positive button-block">{{'Adopt' | translate}}</button>
+            <ion-toggle>{{'Play audio in background' | translate}}</ion-toggle>
+            <button class="button button-positive button-block" ng-click="save()">{{'Save' | translate}}</button>
         </div>
     </ion-content>
 </ion-view>

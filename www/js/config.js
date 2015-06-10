@@ -4,7 +4,6 @@ define(['angular'], function (angular) {
 	'use strict';
   
 	return angular.module('SALA.config', [])
-		.constant('VERSION', '0.1')
-        .constant('email', 'tranduyminhman@gmail.com');
+		.constant('VERSION', '0.1');
     
 });

@@ -3,43 +3,67 @@
 define(function () {
     'use strict';
 
-    function ctrl($scope, $stateParams, BookService, $cordovaNativeAudio, $timeout) {
+    function ctrl($scope, $stateParams, BookService, $ionicPlatform, $cordovaMedia, $cordovaDevice) {
 
         var book = BookService.get({ id: $stateParams.bookId }, function() {
             $scope.book = book;
         });
 
-        /*$cordovaNativeAudio
-            .preloadSimple('click', 'audio/Em-Khong-Quay-Ve-Hoang-Ton-Yanbi.mp3')
-            .then(function (msg) {
-                console.log(msg);
-            }, function (error) {
-                alert(error);
-            });*/
+        $scope.play = function() {
+            if(SALA.media) {
+                SALA.media.release();
+                SALA.mediaPlayOnResume = 0;
+            }
 
-        $cordovaNativeAudio
-            .preloadComplex('music', 'audio/Em-Khong-Quay-Ve-Hoang-Ton-Yanbi.mp3', 1, 1)
-            .then(function (msg) {
-                console.log(msg);
-            }, function (error) {
-                console.error(error);
+            $ionicPlatform.ready(function() {
+
+                var src = SALA.helper.getFilePath('audio/Em-Khong-Quay-Ve-Hoang-Ton-Yanbi.mp3');
+
+                // create media promise
+                SALA.media = $cordovaMedia.newMedia(src);
+
+                // promise completion
+                SALA.media.then(function() {
+                    // success
+                }, function () {
+                    // error
+                });
             });
 
-        $scope.play = function () {
-            //$cordovaNativeAudio.play('click');
-            $cordovaNativeAudio.loop('music');
+            if($cordovaDevice.getPlatform() === 'iOS') {
+                SALA.media.play({
+                    playAudioWhenScreenIsLocked : true
+                });
+            }
+            else {
+                SALA.media.play();
+            }
+            SALA.mediaPlayOnResume = 1;
+        };
 
-            // stop 'music' loop and unload
-            $timeout(function () {
-                $cordovaNativeAudio.stop('music');
+        $scope.pause = function() {
+            if(SALA.media) {
+                SALA.media.pause();
+                SALA.mediaPlayOnResume = 0;
+            }
+        };
 
-                //$cordovaNativeAudio.unload('click');
-                //$cordovaNativeAudio.unload('music');
-            }, 5000 * 60);
+        $scope.stop = function() {
+            if(SALA.media) {
+                SALA.media.stop();
+                SALA.mediaPlayOnResume = 0;
+            }
+        };
+
+        $scope.resume = function() {
+            if(SALA.media) {
+                SALA.media.play();
+                SALA.mediaPlayOnResume = 1;
+            }
         };
     }
 
-    ctrl.$inject = ['$scope', '$stateParams', 'BookService', '$cordovaNativeAudio', '$timeout'];
+    ctrl.$inject = ['$scope', '$stateParams', 'BookService', '$ionicPlatform', '$cordovaMedia', '$cordovaDevice'];
     return ctrl;
     
 });

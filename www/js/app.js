@@ -3,6 +3,7 @@
 define(['angular',
         'uiRouter',
         'config',
+        'helper',
         'filters/filters',
         'services/services',
         'directives/directives',
