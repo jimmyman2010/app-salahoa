@@ -1,0 +1,16 @@
+<ion-view title="{{'Bookshelf' | translate}}">
+    <ion-content>
+
+        <ion-list>
+            <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/main/book-detail/{{book._id}}">
+                <h3>{{book.title}}</h3>
+                <p>{{book.description}}</p>
+                <ion-option-button class="button-balanced" ng-click="share(book)">
+                    {{'Share' | translate}}
+                </ion-option-button>
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>

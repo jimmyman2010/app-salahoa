@@ -14,6 +14,7 @@ define(function (require) {
     controllers.controller('MainCtrl', require('controllers/MainCtrl'));
     controllers.controller('PageCtrl', require('controllers/PageCtrl'));
     controllers.controller('BooksOnlineCtrl', require('controllers/BooksOnlineCtrl'));
+    controllers.controller('BookshelfCtrl', require('controllers/BookshelfCtrl'));
     controllers.controller('BookDetailCtrl', require('controllers/BookDetailCtrl'));
     
     controllers.run(['$rootScope', function ($rootScope) {

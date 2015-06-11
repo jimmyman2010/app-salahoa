@@ -4,10 +4,6 @@ define(function () {
     'use strict';
 
     function ctrl($scope, BookService) {
-        $scope.data = {
-            showDelete: false
-        };
-
         $scope.share = function(book) {
             alert('Share Item: ' + book._id);
         };
