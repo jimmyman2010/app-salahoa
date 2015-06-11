@@ -32,6 +32,9 @@ $menu-left-bd-color: #26292d;
 body{
     font-family: $roboto-family;
 }
+a:active{
+    opacity: 0.75;
+}
 em, i{
     font-family: $roboto-italic-family;
     font-style: normal;
@@ -51,6 +54,39 @@ strong, b{
 .responsive-image{
     max-width: 100%;
     height: auto;
+}
+
+.bookshelf{
+    background: url(../img/background.png);
+    background-size: 235px auto;
+    .list{
+        text-align: center;
+        padding: 0 0 0 60px;
+        background-image: url(../img/bookshelf.png);
+        background-repeat: repeat-y;
+        background-position: top center;
+        background-size: 100% 120px;
+        height: 100%;
+        .item{
+            display: inline-block;
+            margin: 26px 60px 12px 0;
+            overflow: visible;
+            &:first-child{
+                margin-left: 0;
+            }
+            a{
+                padding: 0;
+                line-height: 0;
+                overflow: visible;
+                -webkit-box-shadow: 0 0 15px 3px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0 0 15px 3px rgba(0,0,0,0.5);
+                box-shadow: 0 0 15px 3px rgba(0,0,0,0.5);
+            }
+            img{
+                height: 80px;
+            }
+        }
+    }
 }
 
 /* menu left */
@@ -178,5 +214,21 @@ strong, b{
             transition: bottom 250ms ease-out 150ms;
             bottom: 0;
         }
+    }
+}
+
+@media all and (min-width: 40.063em) {
+    .bookshelf .list {
+        padding: 0 0 0 90px;
+        background-size: 100% 163px;
+        .item {
+            margin: 23px 90px 18px 0;
+            img {
+                height: 120px;
+            }
+        }
+    }
+    .slide-wrapper {
+        height: 320px;
     }
 }

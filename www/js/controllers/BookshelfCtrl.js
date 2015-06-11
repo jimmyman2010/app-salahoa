@@ -3,11 +3,13 @@
 define(function () {
     'use strict';
 
-    function ctrl($scope, $cordovaSQLite) {
-
+    function ctrl($scope, BookService) {
+        var books = BookService.query(function() {
+            $scope.books = books;
+        });
     }
 
-    ctrl.$inject = ['$scope', '$cordovaSQLite'];
+    ctrl.$inject = ['$scope', 'BookService'];
     return ctrl;
     
 });
