@@ -7744,6 +7744,10 @@ strong, b {
 .bookshelf {
   background: url(../img/background.png);
   background-size: 235px auto; }
+  .bookshelf .scroll {
+    background: url(../img/bookshelf-scroll.png);
+    background-size: 235px auto;
+    height: 100%; }
   .bookshelf .list {
     text-align: center;
     padding: 0 0 0 60px;

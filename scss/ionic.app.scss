@@ -59,6 +59,11 @@ strong, b{
 .bookshelf{
     background: url(../img/background.png);
     background-size: 235px auto;
+    .scroll{
+        background: url(../img/bookshelf-scroll.png);
+        background-size: 235px auto;
+        height: 100%;
+    }
     .list{
         text-align: center;
         padding: 0 0 0 60px;
