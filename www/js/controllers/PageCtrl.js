@@ -4,7 +4,7 @@
 define(function () {
     'use strict';
 
-    function ctrl($scope, $state, $cordovaDevice, $cordovaAppAvailability, $cordovaEmailComposer) {
+    function ctrl($scope, $state, $cordovaDevice, $cordovaAppAvailability, $cordovaEmailComposer, $cordovaInAppBrowser) {
 
         $scope.openTwitter = function(){
             var schemeTw;
@@ -18,9 +18,9 @@ define(function () {
 
             $cordovaAppAvailability.check(schemeTw)
                 .then(function() {
-                    window.open('twitter://user?screen_name=jimmyman2010', '_system', 'location=no');
+                    $cordovaInAppBrowser.open('twitter://user?screen_name=jimmyman2010', '_system');
                 }, function () {
-                    window.open('https://twitter.com/jimmyman2010', '_system', 'location=no');
+                    $cordovaInAppBrowser.open('https://twitter.com/jimmyman2010');
                 });
         };
 
@@ -36,18 +36,18 @@ define(function () {
 
             $cordovaAppAvailability.check(schemeTw)
                 .then(function() {
-                    window.open('fb://profile?id=100000156353388', '_system', 'location=no');
+                    $cordovaInAppBrowser.open('fb://profile?id=100000156353388', '_system');
                 }, function () {
-                    window.open('https://www.facebook.com/jimmyman2010', '_system', 'location=no');
+                    $cordovaInAppBrowser.open('https://www.facebook.com/jimmyman2010');
                 });
         };
 
         $scope.openWebsite = function(){
-            window.open('http://www.mantrantd.com', '_system', 'location=no');
+            $cordovaInAppBrowser.open('http://www.mantrantd.com');
         };
 
         $scope.openPhone = function(){
-            window.open('tel:+84 908 036 105', '_system', 'location=no');
+            $cordovaInAppBrowser.open('tel:+84 908 036 105');
         };
 
         $scope.openMail = function(){
@@ -68,7 +68,7 @@ define(function () {
 
     }
 
-    ctrl.$inject = ['$scope', '$state', '$cordovaDevice', '$cordovaAppAvailability', '$cordovaEmailComposer'];
+    ctrl.$inject = ['$scope', '$state', '$cordovaDevice', '$cordovaAppAvailability', '$cordovaEmailComposer', '$cordovaInAppBrowser'];
     return ctrl;
 
 });
