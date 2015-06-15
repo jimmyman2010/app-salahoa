@@ -23,7 +23,8 @@ define(['angular',
             'ui.router',
             'pascalprecht.translate',
             'ngResource',
-            'ngCordova'
+            'ngCordova',
+            'ionic-audio'
         ]);
 
         return SALA;

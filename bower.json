@@ -6,6 +6,7 @@
     "ngCordova": "driftyco/ng-cordova",
     "ngResource": "angular/bower-angular-resource",
     "requirejs": "jrburke/requirejs",
-    "text": "requirejs/text"
+    "text": "requirejs/text",
+    "audio": "arielfaur/ionic-audio"
   }
 }

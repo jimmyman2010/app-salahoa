@@ -9,7 +9,14 @@ define(function () {
             $scope.book = book;
         });
 
-        $scope.play = function() {
+        $scope.track = {
+            url: SALA.helper.getFilePath('audio/Em-Khong-Quay-Ve-Hoang-Ton-Yanbi.mp3'),
+            artist: 'Somebody',
+            title: 'Song name',
+            art: 'img/album_art.jpg'
+        };
+
+        /*$scope.play = function() {
             if(SALA.media) {
                 SALA.media.release();
                 SALA.mediaPlayOnResume = 0;
@@ -60,7 +67,7 @@ define(function () {
                 SALA.media.play();
                 SALA.mediaPlayOnResume = 1;
             }
-        };
+        };*/
     }
 
     ctrl.$inject = ['$scope', '$stateParams', 'BookService', '$ionicPlatform', '$cordovaMedia', '$cordovaDevice'];

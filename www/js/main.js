@@ -10,6 +10,7 @@ requirejs.config({
         ngCordova:          '../lib/ngCordova/dist/ng-cordova.min',
         uiRouter:           '../lib/angular-ui-router/release/angular-ui-router.min',
         ionic:              '../lib/ionic/js/ionic.min',
+        audio:              '../lib/audio/dist/ion-audio',
         ionicAngular:       '../lib/ionic/js/ionic-angular.min',
         text:               '../lib/text/text'
     },
@@ -22,7 +23,8 @@ requirejs.config({
         ngCordova : {deps: ['angular']},
         uiRouter : {deps: ['angular']},
         ionic :  {deps: ['angular'], exports : 'ionic'},
-        ionicAngular: {deps: ['angular', 'ionic', 'uiRouter', 'angularAnimate', 'angularSanitize', 'angularTranslate', 'ngResource', 'ngCordova']}
+        audio :  {deps: ['ionic']},
+        ionicAngular: {deps: ['angular', 'ionic', 'uiRouter', 'angularAnimate', 'angularSanitize', 'angularTranslate', 'ngResource', 'ngCordova', 'audio']}
     },
     priority: [
         'angular',
